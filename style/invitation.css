@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/page-turner.svg);
+    background-repeat: no-repeat;
+}
+/*******************Heading******************/
+.heading{
+    padding-top: 2%;
+    position: relative;
+    animation: heading 4s linear 0.1s infinite alternate none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.heading img{
+    width: 5%;
+}
+
+@keyframes heading {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+
+.heading h1{
+    font-size: 150%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: darkred;
+}
+/*******************Heading End******************/
+
+/*******************Container******************/
+.container{
+    margin-top: 2%;
+    width: 60%;
+    height: auto;
+    /*width: 100%;*/
+    border: 1px solid rgb(168, 22, 22);
+    transition: all ease-out 2s;
+    border-radius: 200px 10px 200px 10px;
+    background-image: url(../images/heart-background.jpeg);
+    background-size: cover;
+}
+
+.container:hover {
+    width: 80%;
+    cursor: pointer;
+    border: 3px solid lightskyblue;
+    font-size: 26px;
+    border-radius: 300px 20px 300px 20px;
+    transition: all ease-in-out 2s;
+
+  }
+
+  /**********Content************/
+.container .content{
+    margin: 2%;
+    /*padding: 2%;*/
+    max-width:600px;
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container .content p{
+   color: rgb(141, 16, 16);
+   font-family: 'Oswald', sans-serif;
+   
+}
+
+.container .content h2,h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(138, 107, 30);
+    text-align: center;
+}
+
+svg{
+    animation:infinite;
+}
+
+.container .content address{
+    text-decoration: underline;
+    text-align: center;
+    color: brown;
+}
+ /**********Content End************/
+ 
+/*******************Container End******************/
